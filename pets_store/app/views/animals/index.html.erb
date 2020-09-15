@@ -1,4 +1,6 @@
-
+<h1>Current Pets Up for Adoption!</h1>
 <ul>
-  <li><%@pets%></li>
+  <% @pets.each do |pet| %>
+  <li><%= pet.name.capitalize %></li>
+  <% end %>
 </ul>
